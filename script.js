@@ -16,7 +16,8 @@ function calcular() {
     } else if(estado == 'SP') {
         resultado.innerHTML += `<p>O seu estado é <strong>São Paulo</strong>. Você é paulista.</p>`
         resultado.innerHTML += `<p>Nº de cidades: 645</br> População: 44.749.699</br> Capital: São Paulo</br></p>`
-        resultado.style.color ='violet'
+        resultado.style.color ='black'
+        resultado.style.fontFamily = 'Arial'
         imagem1.setAttribute('src', 'img/SaoPaulo.jpeg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
