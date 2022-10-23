@@ -10,13 +10,22 @@ function calcular() {
         resultado.innerHTML += `<p>O seu estado é <strong>Rondônia</strong>. Você é rondoniense.</p>`
         resultado.innerHTML += `<p>Nº de cidades: 52</br> População: 1.796.460</br> Capital: Porto Velho</br></p>`
         resultado.style.color = 'black'
-        resultado.style,fontFamily = 'Arial'
+        resultado.style.fontFamily = 'Arial'
         imagem1.setAttribute('src', 'img/Rondonia.jpeg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
                 
-    } else if(estado == 'SP' || estado =='sp') {
+    } 
+    else if(estado == 'AM' || estado == 'am'){
+        resultado.innerHTML += `<p>O seu estado é o <strong>Amazônas</strong>. Você é amazonense.</p>`
+        resultado.innerHTML += `<p>Nº de cidades: 62</br> População: 4.269.995 hab.</br> Capital: Manaus</br></p>`
+        resultado.style.color = 'black'
+        resultado.style.fontFamily = 'Arial'
+        imagem1.setAttribute('src', 'img/amazonas.jpg');
+        document.getElementById('bandeiraEstado').appendChild(imagem1);
+    }
+    else if(estado == 'SP' || estado =='sp') {
         resultado.innerHTML += `<p>O seu estado é <strong>São Paulo</strong>. Você é paulista.</p>`
-        resultado.innerHTML += `<p>Nº de cidades: 645</br> População: 44.749.699</br> Capital: São Paulo</br></p>`
+        resultado.innerHTML += `<p>Nº de cidades: 645</br> População: 44.749.699 hab.</br> Capital: São Paulo</br></p>`
         resultado.style.color ='black'
         resultado.style.fontFamily = 'Arial'
         imagem1.setAttribute('src', 'img/SaoPaulo.jpeg');
@@ -24,7 +33,7 @@ function calcular() {
     }
     else if(estado == 'PR' || estado == 'pr') {
         resultado.innerHTML += `<p>O seu estado é <strong>Paraná</strong>. Você é paranaense.</p>`
-        resultado.innerHTML += `<p>Nº de cidades: 399</br> População: 11.597.484</br> Capital: Curitiba</br></p>`
+        resultado.innerHTML += `<p>Nº de cidades: 399</br> População: 11.597.484 hab.</br> Capital: Curitiba</br></p>`
         resultado.style.color = 'black'
         resultado.style,fontFamily = 'Arial'
         imagem1.setAttribute('src', 'img/Parana.jpeg');
@@ -32,7 +41,7 @@ function calcular() {
     }
     else if(estado == 'SC' || estado == 'sc') {
         resultado.innerHTML += `<p>O seu estado é <strong>Santa Catarina</strong>. Você é catarinense.</p>`
-        resultado.innerHTML += `<p>Nº de cidades: 295</br> População:7.252.502</br> Capital: Florianópolis</br></p>`
+        resultado.innerHTML += `<p>Nº de cidades: 295</br> População:7.252.502 hab.</br> Capital: Florianópolis</br></p>`
         resultado.style.color = 'black'
         resultado.style,fontFamily = 'Arial'
         imagem1.setAttribute('src', 'img/SantaCatarina.jpeg');
@@ -40,7 +49,7 @@ function calcular() {
     }
     else if(estado == 'RS' || estado == 'rs') {
         resultado.innerHTML += `<p>O seu estado é <strong>Rio Grande do Sul</strong>. Você é riograndense.</p>`
-        resultado.innerHTML += `<p>Nº de cidades: 497</br> População: 10.693.929</br> Capital: Porto Alegre</br></p>`
+        resultado.innerHTML += `<p>Nº de cidades: 497</br> População: 10.693.929 hab.</br> Capital: Porto Alegre</br></p>`
         resultado.style.color = 'black'
         resultado.style,fontFamily = 'Arial'
         imagem1.setAttribute('src', 'img/RioGrandeDoSul.jpeg');
@@ -48,7 +57,7 @@ function calcular() {
     }
     else if(estado == 'MG' || estado == 'mg') {
         resultado.innerHTML += `<p>O seu estado é <strong>Minas Gerais</strong>. Você é mineiro.</p>`
-        resultado.innerHTML += `<p>Nº de cidades: 471</br> População: 21.411.923</br> Capital: Belo Horizonte</br></p>`
+        resultado.innerHTML += `<p>Nº de cidades: 471</br> População: 21.411.923 hab.</br> Capital: Belo Horizonte</br></p>`
         resultado.style.color = 'black'
         resultado.style,fontFamily = 'Arial'
         imagem1.setAttribute('src', 'img/MinasGerais.jpg');
