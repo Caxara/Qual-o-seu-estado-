@@ -9,6 +9,7 @@ function calcular() {
     if(estado == 'RO' || estado == 'ro') {
         resultado.innerHTML += `<p>O seu estado é <strong>Rondônia</strong>. Você é rondoniense.</p>`
         resultado.innerHTML += `<p>Nº de cidades: 52</br> População: 1.796.460</br> Capital: Porto Velho</br></p>`
+        resultado.innerHTML += `<p>O nome Rondônia é uma homenagem ao Marechal Cândido Rondon, que nasceu há 150 anos.</br> De origem indígena por parte de seus bisavós maternos e bisavó paterna.</br> Nasceu no dia 5 de Maio do ano de 1865, na cidade de Mimoso no estado do Mato Grosso, hoje Santo Antônio do Leverger.</p>`
         resultado.style.color = 'black'
         resultado.style.fontFamily = 'Arial'
         imagem1.setAttribute('src', 'img/Rondonia.jpeg');
@@ -18,9 +19,19 @@ function calcular() {
     else if(estado == 'AM' || estado == 'am'){
         resultado.innerHTML += `<p>O seu estado é o <strong>Amazônas</strong>. Você é amazonense.</p>`
         resultado.innerHTML += `<p>Nº de cidades: 62</br> População: 4.269.995 hab.</br> Capital: Manaus</br></p>`
+        resultado.innerHTML += `<p>O Amazonas é o único estado brasileiro cujo nome vem do grego.</br> Durante uma expedição no século 16, o espanhol Francisco de Orellana encasquetou</br> em ter visto uma tribo de guerreiras índias mulheres que lutavam bravamente,</br> igualzinho o mito das amazonas gregas. Logo, rio das Amazonas.</p>`
         resultado.style.color = 'black'
         resultado.style.fontFamily = 'Arial'
         imagem1.setAttribute('src', 'img/amazonas.jpg');
+        document.getElementById('bandeiraEstado').appendChild(imagem1);
+    }
+    else if(estado == 'RR' || estado == 'rr'){
+        resultado.innerHTML += `<p>O seu estado é <strong>Roraima</strong>. Você é roraimense.</p>`
+        resultado.innerHTML += `<p>Nº de cidades: 15</br> População: 652.713 hab.</br> Capital: Boa Vista</br></p>`
+        resultado.innerHTML += `<p>A palavra "Roraima" vem de línguas indígenas.</br> Sua etimologia lhe emprega três significados:</br> “Monte Verde”, “Mãe dos Ventos” e “Serra do Caju”.</br> Seria a junção de roro (papagaio) e imã (pai, formador).</p>`
+        resultado.style.cor = 'black'
+        resultado.style.fontFamily = 'Arial'
+        imagem1.setAttribute('src', 'img/roraima.jpg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
     else if(estado == 'SP' || estado =='sp') {
