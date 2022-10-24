@@ -61,6 +61,15 @@ function calcular() {
         imagem1.setAttribute('src', 'img/roraima.jpg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
+    else if(estado == 'TO' || estado == 'to'){
+        resultado.innerHTML += `<p>O seu estado é o <strong>Tocantins</strong>. Você é tocantinense.</p>`
+        resultado.innerHTML += `<p>Nº de cidades: 139</br> População: 1,497.000 hab.</br> Capital: Palmas </p>`
+        resultado.innerHTML += `<p>O nome "Tocantins" é uma referência ao rio Tocantins, que corta o estado de sul ao norte.</br> Trata-se de um termo oriundo do tupi antigo, onde significa "bicos de tucanos",</br> através da junção dos termos tukana ("tucanos") e tim ("bicos")</p>`
+        resultado.style.cor = 'black'
+        resultado.style.fontFamily = 'Arial'
+        imagem1.setAttribute('src', 'img/tocantins.jpg');
+        document.getElementById('bandeiraEstado').appendChild(imagem1);
+    }
     else if(estado == 'SP' || estado =='sp'){
         resultado.innerHTML += `<p>O seu estado é <strong>São Paulo</strong>. Você é paulista.</p>`
         resultado.innerHTML += `<p>Nº de cidades: 645</br> População: 44.749.699 hab.</br> Capital: São Paulo</br></p>`
