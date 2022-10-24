@@ -15,6 +15,15 @@ function calcular() {
         imagem1.setAttribute('src', 'img/Rondonia.jpeg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
                 
+    }
+    else if(estado == 'AC' || estado == 'ac'){
+        resultado.innerHTML += `<p>O seu estado é o <strong>Acre</strong>. Você é acriano.</p>`
+        resultado.innerHTML += `Nº de cidade: 22</br> População: 790.101 hab.</br> Capital: Rio Branco</p>`
+        resultado.innerHTML += `<p>O nome Acre surgiu de “Aquiri”, que significa “rio dos jacarés” na língua nativa dos índios Apurinãs,</br> os habitantes originais da região banhada pelo rio que empresta o nome ao estado.</br> Os exploradores da região transcreveram o nome do dialeto indígena, dando origem ao nome Acre.</p>`
+        resultado.style.color = 'black'
+        resultado.style.fontFamily = 'Arial'
+        imagem1.setAttribute('src', 'img/acre.jpg');
+        document.getElementById('bandeiraEstado').appendChild(imagem1);
     } 
     else if(estado == 'AM' || estado == 'am'){
         resultado.innerHTML += `<p>O seu estado é o <strong>Amazônas</strong>. Você é amazonense.</p>`
