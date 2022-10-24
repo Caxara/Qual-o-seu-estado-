@@ -80,6 +80,15 @@ function calcular() {
         imagem1.setAttribute('src', '/img/matoGrosso.jpg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
+    else if(estado == 'MS' || estado == 'ms'){
+        resultado.innerHTML += `<p>O seu estado é <strong>Mato Grosso do Sul</strong>. Você é sul-matogrossense.</p>`
+        resultado.innerHTML += `<p>Nº de cidades: 79</br> População: 2,62.000 hab. </br> Capital: Campo Grande</p>`
+        resultado.innerHTML += `<p>O termo "Mato Grosso do Sul" deriva do nome do vizinho "Mato Grosso", estado do qual aquele foi desmembrado quando de sua criação.</p>`
+        resultado.style.cor = 'Black'
+        resultado.style.fontFamily = 'Arial'
+        imagem1.setAttribute('src', '/img/Mato-Grosso-do-Sul.jpg');
+        document.getElementById('bandeiraEstado').appendChild(imagem1);
+    }
     else if(estado == 'SP' || estado =='sp'){
         resultado.innerHTML += `<p>O seu estado é <strong>São Paulo</strong>. Você é paulista.</p>`
         resultado.innerHTML += `<p>Nº de cidades: 645</br> População: 44.749.699 hab.</br> Capital: São Paulo</br></p>`
