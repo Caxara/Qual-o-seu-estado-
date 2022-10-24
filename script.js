@@ -70,6 +70,16 @@ function calcular() {
         imagem1.setAttribute('src', 'img/tocantins.jpg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
+    else if(estado == 'MT' || estado == 'mt'){
+        resultado.innerHTML += `<p>O seu estado é <strong>Mato Grosso</strong>. Você é matogrossense.</p>`
+        resultado.innerHTML += `<p>Nº de cidades: 144</br> População: 3,224.000 hab. </br> Capital: Cuiabá</p>`
+        resultado.innerHTML += `<p>O nome Mato Grosso é originário de uma grande extensão de sete léguas de mato alto,</br> espesso, quase impenetrável, localizado nas margens do rio Galera, 
+        percorrido pela primeira vez em 1734 pelos irmãos Paes de Barros.</p>`
+        resultado.style.cor = 'Black'
+        resultado.style.fontFamily = 'Arial'
+        imagem1.setAttribute('src', '/img/matoGrosso.jpg');
+        document.getElementById('bandeiraEstado').appendChild(imagem1);
+    }
     else if(estado == 'SP' || estado =='sp'){
         resultado.innerHTML += `<p>O seu estado é <strong>São Paulo</strong>. Você é paulista.</p>`
         resultado.innerHTML += `<p>Nº de cidades: 645</br> População: 44.749.699 hab.</br> Capital: São Paulo</br></p>`
