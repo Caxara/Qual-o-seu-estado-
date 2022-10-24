@@ -4,7 +4,6 @@ function calcular() {
     var estado = String(textInput.value)
             
     var imagem1 = document.createElement('IMG');
-    estado.innerHTML = ``
             
     if(estado == 'RO' || estado == 'ro') {
         resultado.innerHTML += `<p>O seu estado é <strong>Rondônia</strong>. Você é rondoniense.</p>`
@@ -15,6 +14,15 @@ function calcular() {
         imagem1.setAttribute('src', 'img/Rondonia.jpeg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
                 
+    }
+    else if(estado == 'PA' || estado == 'pa'){
+        resultado.innerHTML += `<p>O seu estado é o <strong>Pará</strong>. Você é paraense.</p>`
+        resultado.innerHTML += `<p>Nº de cidades: 144</br> População: 8.074.000 hab.</br> Capital: Belém</p>`
+        resultado.innerHTML += `<p>A origem do nome Pará vem do termo “pa'ra”, o mesmo que “rio-mar” na língua tupi-guarani.</br> Era assim que os índios denominavam um dos braços, o direito - do rio Amazonas.</p>`
+        resultado.style.cor ='black'
+        resultado.style.fontFamily = 'Arial'
+        imagem1.setAttribute('src', 'img/para.jpg');
+        document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
     else if(estado == 'AC' || estado == 'ac'){
         resultado.innerHTML += `<p>O seu estado é o <strong>Acre</strong>. Você é acriano.</p>`
@@ -53,7 +61,7 @@ function calcular() {
         imagem1.setAttribute('src', 'img/roraima.jpg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
-    else if(estado == 'SP' || estado =='sp') {
+    else if(estado == 'SP' || estado =='sp'){
         resultado.innerHTML += `<p>O seu estado é <strong>São Paulo</strong>. Você é paulista.</p>`
         resultado.innerHTML += `<p>Nº de cidades: 645</br> População: 44.749.699 hab.</br> Capital: São Paulo</br></p>`
         resultado.style.color ='black'
@@ -61,7 +69,7 @@ function calcular() {
         imagem1.setAttribute('src', 'img/SaoPaulo.jpeg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
-    else if(estado == 'PR' || estado == 'pr') {
+    else if(estado == 'PR' || estado == 'pr'){
         resultado.innerHTML += `<p>O seu estado é <strong>Paraná</strong>. Você é paranaense.</p>`
         resultado.innerHTML += `<p>Nº de cidades: 399</br> População: 11.597.484 hab.</br> Capital: Curitiba</br></p>`
         resultado.style.color = 'black'
@@ -69,7 +77,7 @@ function calcular() {
         imagem1.setAttribute('src', 'img/Parana.jpeg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
-    else if(estado == 'SC' || estado == 'sc') {
+    else if(estado == 'SC' || estado == 'sc'){
         resultado.innerHTML += `<p>O seu estado é <strong>Santa Catarina</strong>. Você é catarinense.</p>`
         resultado.innerHTML += `<p>Nº de cidades: 295</br> População:7.252.502 hab.</br> Capital: Florianópolis</br></p>`
         resultado.style.color = 'black'
@@ -77,7 +85,7 @@ function calcular() {
         imagem1.setAttribute('src', 'img/SantaCatarina.jpeg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
-    else if(estado == 'RS' || estado == 'rs') {
+    else if(estado == 'RS' || estado == 'rs'){
         resultado.innerHTML += `<p>O seu estado é <strong>Rio Grande do Sul</strong>. Você é riograndense.</p>`
         resultado.innerHTML += `<p>Nº de cidades: 497</br> População: 10.693.929 hab.</br> Capital: Porto Alegre</br></p>`
         resultado.style.color = 'black'
@@ -85,7 +93,7 @@ function calcular() {
         imagem1.setAttribute('src', 'img/RioGrandeDoSul.jpeg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
-    else if(estado == 'MG' || estado == 'mg') {
+    else if(estado == 'MG' || estado == 'mg'){
         resultado.innerHTML += `<p>O seu estado é <strong>Minas Gerais</strong>. Você é mineiro.</p>`
         resultado.innerHTML += `<p>Nº de cidades: 471</br> População: 21.411.923 hab.</br> Capital: Belo Horizonte</br></p>`
         resultado.style.color = 'black'
