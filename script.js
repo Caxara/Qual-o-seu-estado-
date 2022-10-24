@@ -24,7 +24,17 @@ function calcular() {
         resultado.style.fontFamily = 'Arial'
         imagem1.setAttribute('src', 'img/acre.jpg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
-    } 
+    }
+    else if(estado == 'AP' || estado == 'ap'){
+        resultado.innerHTML += `<p>O seu estado é <strong>Amapá</strong>. Você é amapaence.</p>`
+        resultado.innerHTML += `<p>Nº de cidades: 27</br> População: 751.000 hab.</br> Capital: Macapá</p>`
+        resultado.innerHTML += `<p>A palavra amapá é de origem indígena e vem da nação Nuaruaque,</br> que habitava a região Norte do Brasil, 
+        na época do descobrimento. Significa, “Lugar da Chuva”.</br> AMA (Chuva) + PA ou PABA (Lugar, estância, morada).</p>`
+        resultado.style.cor = 'black'
+        resultado.style.fontFamily ='Arial'
+        imagem1.setAttribute('src', 'img/amapa.jpg');
+        document.getElementById('bandeiraEstado').appendChild(imagem1);
+    }
     else if(estado == 'AM' || estado == 'am'){
         resultado.innerHTML += `<p>O seu estado é o <strong>Amazônas</strong>. Você é amazonense.</p>`
         resultado.innerHTML += `<p>Nº de cidades: 62</br> População: 4.269.995 hab.</br> Capital: Manaus</br></p>`
