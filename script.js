@@ -106,6 +106,13 @@ function calcular() {
         imagem1.setAttribute('src', 'img/MinasGerais.jpg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
+    else if(estado == 'GO' || estado == 'go'){
+        resultado.innerHTML += `<p><strong>O seu estado é Goiás. Você é goiano.</strong></p>`
+        resultado.innerHTML += `<p><strong>Nº de cidade: 246</br> População: 6.523,000 hab.</br> Capital: Goiania</strong></p>`
+        resultado.innerHTML += `<p><strong>O nome do Estado tem origem na denominação da tribo indígena “guaiás” que, por corruptela, se tornou Goiás. Vem do termo tupi “gwaya”, que quer dizer "indivíduo igual, gente semelhante, da mesma raça".</strong></p>`
+        imagem1.setAttribute('src', 'img/Goias.jpg');
+        document.getElementById('bandeiraEstado').appendChild(imagem1);
+    }
     else {
         resultado.innerHTML += `<p><strong>SEU ESTADO AINDA NÃO ESTÁ NO BANCO DE DADOS.</strong></p>`
         imagem1.setAttribute('src', 'img/Brasil.png');
