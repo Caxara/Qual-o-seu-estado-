@@ -119,7 +119,20 @@ function calcular() {
         resultado.innerHTML += `<p><strong>O Distrito Federal recebe esse nome por abrigar a sede do governo brasileiro.</strong></p>`
         imagem1.setAttribute('src', 'img/Distrito.jpg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
-
+    }
+    else if(estado == 'RJ' || estado == 'rj'){
+        resultado.innerHTML += `<p><strong>O seu estado é Rio de Janeiro. Você é fluminense.</strong></p>`
+        resultado.innerHTML += `<p><strong>Nº de cidade: 92</br> População: 6.748.000 hab.</br> Capital: Rio de Janeiro</strong></p>`
+        resultado.innerHTML += `<p><strong>As histórios são muitas, mas uma que foi adotada pela maioria é de que navegadores portugueses ao chegar na Baia de Guanabara, e por isso acharam estar diante de uma grande desenbocar de um rio.</strong></p>`
+        imagem1.setAttribute('src', 'img/RioJaneiro.jpg');
+        document.getElementById('bandeiraEstado').appendChild(imagem1);
+    }
+    else if(estado == 'ES' || estado == 'es'){
+        resultado.innerHTML += `<p><strong>O seu estado é Espírito Santo. Você é capixaba.</strong></p>`
+        resultado.innerHTML += `<p><strong>Nº de cidades: 78</br> População: 3.885.000</br> Capital: Vitória</strong></p>`
+        resultado.innerHTML += `<p><strong>Vasco Coutinho desembarcou na capitania em dia 23 de maio de 1535, desembarcando na atual Prainha de Vila Velha, onde fundou o primeiro povoamento. Como era oitava de Pentecostes, o donatário batizou a terra de Espírito Santo, em homenagem à terceira pessoa da Santíssima Trindade.</strong></p>`
+        imagem1.setAttribute('src', 'img/EspiritoSanto.jpg');
+        document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
     else {
         resultado.innerHTML += `<p><strong>SEU ESTADO AINDA NÃO ESTÁ NO BANCO DE DADOS.</strong></p>`
