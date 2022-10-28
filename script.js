@@ -100,18 +100,26 @@ function calcular() {
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
     else if(estado == 'MG' || estado == 'mg'){
-        resultado.innerHTML += `<p><strong>O seu estado é <strong>Minas Gerais</strong>. Você é mineiro.</strong></p>`
+        resultado.innerHTML += `<p><strong>O seu estado é <strong>Minas Gerais</strong>. Você é mineiro(a).</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidades: 471</br> População: 21.411.923 hab.</br> Capital: Belo Horizonte</strong></br></p>`
         resultado.innerHTML += `<p><strong>Minas Gerais se relaciona literalmente por abrigar campos de extração de inúmeros minérios, principalmente ouro, denominadas "minas gerais", em oposição às minas particulares ou por sua variedade de tipos de minério. No início do século XVIII, a região era simplesmente denominada Minas.</strong></p>`
         imagem1.setAttribute('src', 'img/MinasGerais.jpg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
     else if(estado == 'GO' || estado == 'go'){
-        resultado.innerHTML += `<p><strong>O seu estado é Goiás. Você é goiano.</strong></p>`
+        resultado.innerHTML += `<p><strong>O seu estado é Goiás. Você é goiano(a).</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidade: 246</br> População: 6.523,000 hab.</br> Capital: Goiania</strong></p>`
         resultado.innerHTML += `<p><strong>O nome do Estado tem origem na denominação da tribo indígena “guaiás” que, por corruptela, se tornou Goiás. Vem do termo tupi “gwaya”, que quer dizer "indivíduo igual, gente semelhante, da mesma raça".</strong></p>`
         imagem1.setAttribute('src', 'img/Goias.jpg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
+    }
+    else if(estado == 'DF' || estado == 'df'){
+        resultado.innerHTML += `<p><strong>O seu estado é o Distrito Federal. Você é candango(a).</strong></p>`
+        resultado.innerHTML += `<p><strong>Nº de cidade: 1</br> População: 2.570.160 hab.</br> Capital: Brasília</strong></p>`
+        resultado.innerHTML += `<p><strong>O Distrito Federal recebe esse nome por abrigar a sede do governo brasileiro.</strong></p>`
+        imagem1.setAttribute('src', 'img/Distrito.jpg');
+        document.getElementById('bandeiraEstado').appendChild(imagem1);
+
     }
     else {
         resultado.innerHTML += `<p><strong>SEU ESTADO AINDA NÃO ESTÁ NO BANCO DE DADOS.</strong></p>`
