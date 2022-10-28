@@ -74,12 +74,14 @@ function calcular() {
     else if(estado == 'SP' || estado =='sp'){
         resultado.innerHTML += `<p><strong>O seu estado é <strong>São Paulo</strong>. Você é paulista.</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidades: 645</br> População: 44.749.699 hab.</br> Capital: São Paulo</strong></br></p>`
+        resultado.innerHTML += `<p><strong>O nome São Paulo foi escolhido porque o dia da fundação do colégio foi 25 de janeiro, mesmo dia no qual a Igreja Católica celebra a conversão do apóstolo Paulo de Tarso.</strong></p>`
         imagem1.setAttribute('src', 'img/SaoPaulo.jpeg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
     else if(estado == 'PR' || estado == 'pr'){
         resultado.innerHTML += `<p><strong>O seu estado é <strong>Paraná</strong>. Você é paranaense.</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidades: 399</br> População: 11.597.484 hab.</br> Capital: Curitiba</strong></br></p>`
+        resultado.innerHTML += `<p><strong>O primitivo homem paranaense pertencia à família tupi-guarani e jê. Foram os tupi que deram nome ao Estado: Paraná "rio caudaloso", sendo estes ainda, os que primeiramente entraram em contato como o homem branco.</strong></p>`
         imagem1.setAttribute('src', 'img/Parana.jpeg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
