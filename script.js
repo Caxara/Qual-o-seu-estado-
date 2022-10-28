@@ -8,7 +8,7 @@ function calcular() {
     if(estado == 'RO' || estado == 'ro') {
         resultado.innerHTML += `<p><strong>O seu estado é Rondônia. Você é rondoniense.<strong</p>`
         resultado.innerHTML += `<p><strong>Nº de cidades: 52</br> População: 1.796.460</br> Capital: Porto Velho</strong></br></p>`
-        resultado.innerHTML += `<p><strong>O nome Rondônia é uma homenagem ao Marechal Cândido Rondon, que nasceu há 150 anos.</br> De origem indígena por parte de seus bisavós maternos e bisavó paterna.</br> Nasceu no dia 5 de Maio do ano de 1865, na cidade de Mimoso no estado do Mato Grosso, hoje Santo Antônio do Leverger.</strong</p>`
+        resultado.innerHTML += `<p><strong>O nome Rondônia é uma homenagem ao Marechal Cândido Rondon, que nasceu há 150 anos. De origem indígena por parte de seus bisavós maternos e bisavó paterna. Nasceu no dia 5 de Maio do ano de 1865, na cidade de Mimoso no estado do Mato Grosso, hoje Santo Antônio do Leverger.</strong</p>`
         imagem1.setAttribute('src', 'img/Rondonia.jpeg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
                 
@@ -16,43 +16,43 @@ function calcular() {
     else if(estado == 'PA' || estado == 'pa'){
         resultado.innerHTML += `<p><strong>O seu estado é o <strong>Pará</strong>. Você é paraense.</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidades: 144</br> População: 8.074.000 hab.</br> Capital: Belém</strong></p>`
-        resultado.innerHTML += `<p><strong>A origem do nome Pará vem do termo “pa'ra”, o mesmo que “rio-mar” na língua tupi-guarani.</br> Era assim que os índios denominavam um dos braços, o direito - do rio Amazonas.</strong></p>`
+        resultado.innerHTML += `<p><strong>A origem do nome Pará vem do termo “pa'ra”, o mesmo que “rio-mar” na língua tupi-guarani. Era assim que os índios denominavam um dos braços, o direito - do rio Amazonas.</strong></p>`
         imagem1.setAttribute('src', 'img/para.jpg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
     else if(estado == 'AC' || estado == 'ac'){
         resultado.innerHTML += `<p><strong>O seu estado é o <strong>Acre</strong>. Você é acriano.</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidade: 22</br> População: 790.101 hab.</br> Capital: Rio Branco</strong></p>`
-        resultado.innerHTML += `<p><strong>O nome Acre surgiu de “Aquiri”, que significa “rio dos jacarés” na língua nativa dos índios Apurinãs,</br> os habitantes originais da região banhada pelo rio que empresta o nome ao estado.</br> Os exploradores da região transcreveram o nome do dialeto indígena, dando origem ao nome Acre.<strong></p>`
+        resultado.innerHTML += `<p><strong>O nome Acre surgiu de “Aquiri”, que significa “rio dos jacarés” na língua nativa dos índios Apurinãs, os habitantes originais da região banhada pelo rio que empresta o nome ao estado. Os exploradores da região transcreveram o nome do dialeto indígena, dando origem ao nome Acre.<strong></p>`
         imagem1.setAttribute('src', 'img/acre.jpg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
     else if(estado == 'AP' || estado == 'ap'){
         resultado.innerHTML += `<p><strong>O seu estado é <strong>Amapá</strong>. Você é amapaence.</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidades: 27</br> População: 751.000 hab.</br> Capital: Macapá</strong></p>`
-        resultado.innerHTML += `<p><strong>A palavra amapá é de origem indígena e vem da nação Nuaruaque,</br> que habitava a região Norte do Brasil, 
-        na época do descobrimento. Significa, “Lugar da Chuva”.</br> AMA (Chuva) + PA ou PABA (Lugar, estância, morada).</strong></p>`
+        resultado.innerHTML += `<p><strong>A palavra amapá é de origem indígena e vem da nação Nuaruaque, que habitava a região Norte do Brasil, 
+        na época do descobrimento. Significa, “Lugar da Chuva”. AMA (Chuva) + PA ou PABA (Lugar, estância, morada).</strong></p>`
         imagem1.setAttribute('src', 'img/amapa.jpg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
     else if(estado == 'AM' || estado == 'am'){
         resultado.innerHTML += `<p><strong>O seu estado é o <strong>Amazônas</strong>. Você é amazonense.</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidades: 62</br> População: 4.269.995 hab.</br> Capital: Manaus</strong></br></p>`
-        resultado.innerHTML += `<p><strong>O Amazonas é o único estado brasileiro cujo nome vem do grego.</br> Durante uma expedição no século 16, o espanhol Francisco de Orellana encasquetou</br> em ter visto uma tribo de guerreiras índias mulheres que lutavam bravamente,</br> igualzinho o mito das amazonas gregas. Logo, rio das Amazonas.</strong></p>`
+        resultado.innerHTML += `<p><strong>O Amazonas é o único estado brasileiro cujo nome vem do grego. Durante uma expedição no século 16, o espanhol Francisco de Orellana encasquetou em ter visto uma tribo de guerreiras índias mulheres que lutavam bravamente, igualzinho o mito das amazonas gregas. Logo, rio das Amazonas.</strong></p>`
         imagem1.setAttribute('src', 'img/amazonas.jpg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
     else if(estado == 'RR' || estado == 'rr'){
         resultado.innerHTML += `<p><strong>O seu estado é <strong>Roraima</strong>. Você é roraimense.</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidades: 15</br> População: 652.713 hab.</br> Capital: Boa Vista</strong></br></p>`
-        resultado.innerHTML += `<p><strong>A palavra "Roraima" vem de línguas indígenas.</br> Sua etimologia lhe emprega três significados:</br> “Monte Verde”, “Mãe dos Ventos” e “Serra do Caju”.</br> Seria a junção de roro (papagaio) e imã (pai, formador).</strong></p>`
+        resultado.innerHTML += `<p><strong>A palavra "Roraima" vem de línguas indígenas. Sua etimologia lhe emprega três significados: “Monte Verde”, “Mãe dos Ventos” e “Serra do Caju”. Seria a junção de roro (papagaio) e imã (pai, formador).</strong></p>`
         imagem1.setAttribute('src', 'img/roraima.jpg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
     else if(estado == 'TO' || estado == 'to'){
         resultado.innerHTML += `<p>O seu estado é o <strong>Tocantins</strong>. Você é tocantinense.</p>`
         resultado.innerHTML += `<p>Nº de cidades: 139</br> População: 1,497.000 hab.</br> Capital: Palmas </p>`
-        resultado.innerHTML += `<p>O nome "Tocantins" é uma referência ao rio Tocantins, que corta o estado de sul ao norte.</br> Trata-se de um termo oriundo do tupi antigo, onde significa "bicos de tucanos",</br> através da junção dos termos tukana ("tucanos") e tim ("bicos")</p>`
+        resultado.innerHTML += `<p>O nome "Tocantins" é uma referência ao rio Tocantins, que corta o estado de sul ao norte. Trata-se de um termo oriundo do tupi antigo, onde significa "bicos de tucanos", através da junção dos termos tukana ("tucanos") e tim ("bicos")</p>`
         imagem1.setAttribute('src', 'img/tocantins.jpg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
@@ -88,18 +88,21 @@ function calcular() {
     else if(estado == 'SC' || estado == 'sc'){
         resultado.innerHTML += `<p><strong>O seu estado é <strong>Santa Catarina</strong>. Você é catarinense.</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidades: 295</br> População:7.252.502 hab.</br> Capital: Florianópolis</strong></br></p>`
+        resultado.innerHTML += `<p><strong>Há divergências quanto ao responsável pela denominação de Santa Catarina: alguns autores atribuem a Sebastião Caboto, em homenagem à sua esposa, Catarina Medrano; outros defendem que tenha sido em homenagem a Santa Catarina de Alexandria, festejada pela igreja católica em 25 de novembro.</strong></p>`
         imagem1.setAttribute('src', 'img/SantaCatarina.jpeg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
     else if(estado == 'RS' || estado == 'rs'){
         resultado.innerHTML += `<p><strong>O seu estado é <strong>Rio Grande do Sul</strong>. Você é riograndense.</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidades: 497</br> População: 10.693.929 hab.</br> Capital: Porto Alegre</strong></br></p>`
+        resultado.innerHTML += `<p><strong>O nome vem de um vilarejo que demarcava a área da foz do rio Grande, que não era foz, mas a lagoa dos Patos.</strong></p>`
         imagem1.setAttribute('src', 'img/RioGrandeDoSul.jpeg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
     else if(estado == 'MG' || estado == 'mg'){
         resultado.innerHTML += `<p><strong>O seu estado é <strong>Minas Gerais</strong>. Você é mineiro.</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidades: 471</br> População: 21.411.923 hab.</br> Capital: Belo Horizonte</strong></br></p>`
+        resultado.innerHTML += `<p><strong>Minas Gerais se relaciona literalmente por abrigar campos de extração de inúmeros minérios, principalmente ouro, denominadas "minas gerais", em oposição às minas particulares ou por sua variedade de tipos de minério. No início do século XVIII, a região era simplesmente denominada Minas.</strong></p>`
         imagem1.setAttribute('src', 'img/MinasGerais.jpg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
