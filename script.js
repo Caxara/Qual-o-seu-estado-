@@ -141,6 +141,13 @@ function calcular() {
         imagem1.setAttribute('src', 'img/Bahia.jpg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
+    else if(estado == 'SE' || estado == 'se'){
+        resultado.innerHTML += `<p><strong>O seu estado é Sergipe. Você é sergipana(o).</strong></p>`
+        resultado.innerHTML += `<p><strong>Nº de cidades: 75</br> População: 2.022.000 hab. </br> Capital: Aracaju</strong></p>`
+        resultado.innerHTML += `<p><strong>O nome Sergipe origina-se do tupi si´ri ü pe, que significa “rio dos siris”.</strong></p>`
+        imagem1.setAttribute('src', 'img/Sergipe.jpg');
+        document.getElementById('bandeiraEstado').appendChild(imagem1);
+    }
     else {
         resultado.innerHTML += `<p><strong>SEU ESTADO AINDA NÃO ESTÁ NO BANCO DE DADOS.</strong></p>`
         imagem1.setAttribute('src', 'img/Brasil.png');
