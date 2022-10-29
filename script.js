@@ -155,6 +155,20 @@ function calcular() {
         imagem1.setAttribute('src', 'img/alagoas.png');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
+    else if(estado == 'PE' || estado == 'pe'){
+        resultado.innerHTML += `<p><strong>O seu estado é Pernambuco. Você é pernambucano(a).</strong></p>`
+        resultado.innerHTML += `<p><strong>Nº de cidades: 185</br> População: 9.278.000 hab.</br> Capital: Recife</strong></p>`
+        resultado.innerHTML += `<p><strong>A versão mais comum sobre Pernambuco diz que, por trás desse nome, está a mesma raiz em tupi (pa'ra) que Pará, Paraná e a Paraíba. No caso de Pernambuco, o termo na língua indígena seria paranãpuka, algo como “buraco no mar” ou “furo que o mar faz”.</strong></p>`
+        imagem1.setAttribute('src', 'img/Pernambuco.jpg');
+        document.getElementById('bandeiraEstado').appendChild(imagem1);
+    }
+    else if(estado == 'PB' || estado == 'pb'){
+        resultado.innerHTML += `<p><strong>O seu estado é Paraíba. Você é paraibano(a).</strong></p>`
+        resultado.innerHTML += `<p><strong>Nº de cidades: 223</br> População: 3.944.000 hab.</br> Capital: João Pessoa</strong></p>`
+        resultado.innerHTML += `<p><strong>É controvertido o significado do topônimo dado ao rio Paraíba. Para Elias Erckman, Paraíba significa rio mau, porto ruim, ou mar corrompido. Varnhagen também indica a tradução de rio mau e Teodoro Sampaio, a de rio impraticável. Segundo Coriolano de Medeiros, porém, o significado exato seria braço de mar, pois os primeiros geógrafos que estudaram o rio tomaram-no por um braço de mar, sendo provável, assim, que o gentio da terra como tal o tivesse considerado, dando-lhe o nome com a precisão com que batizavam os acidentes do terreno.</strong></p>`
+        imagem1.setAttribute('src', 'img/Paraiba.jpg');
+        document.getElementById('bandeiraEstado').appendChild(imagem1);
+    }
     else {
         resultado.innerHTML += `<p><strong>SEU ESTADO AINDA NÃO ESTÁ NO BANCO DE DADOS.</strong></p>`
         imagem1.setAttribute('src', 'img/Brasil.png');
