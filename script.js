@@ -134,6 +134,13 @@ function calcular() {
         imagem1.setAttribute('src', 'img/EspiritoSanto.jpg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
+    else if(estado == 'BA' || estado == 'ba'){
+        resultado.innerHTML += `<p><strong>O seu estado é Bahia. Você é baiano(a).</strong></p>`
+        resultado.innerHTML += `<p><strong>Nº de cidades: 417</br> População: 15.013.00 hab.</br> Capital: Salvador</strong></p>`
+        resultado.innerHTML += `<p><strong>O topônimo "Bahia" é uma referência à Baía de Todos os Santos, a qual deu o nome, originalmente, à Capitania da Baía de Todos os Santos. A capitania foi transformada, em 1821, em província. Em 1889, a Província da Bahia tornou-se o atual Estado da Bahia.</strong></p>`
+        imagem1.setAttribute('src', 'img/Bahia.jpg');
+        document.getElementById('bandeiraEstado').appendChild(imagem1);
+    }
     else {
         resultado.innerHTML += `<p><strong>SEU ESTADO AINDA NÃO ESTÁ NO BANCO DE DADOS.</strong></p>`
         imagem1.setAttribute('src', 'img/Brasil.png');
