@@ -148,6 +148,13 @@ function calcular() {
         imagem1.setAttribute('src', 'img/Sergipe.jpg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
+    else if(estado == 'AL' || estado == 'al'){
+        resultado.innerHTML += `<p><strong>O seu estado é Alagoas. Você é alagoana(o).</strong></p>`
+        resultado.innerHTML += `<p><strong>Nº de cidades: 102</br> População: 3.322.000 hab.</br> Capital: Maceió</strong></p>`
+        resultado.innerHTML += `<p><strong>A palavra é de origem indígena, significando terra alagadiça (o que tapa o alagadiço), que deu origem ao riacho com o mesmo nome. Só na capital, Maceió, são 17 lagoas, entre mais de 30 em todo o estado. Essa característica da hidrografia definiu o nome do estado até hoje.</strong></p>`
+        imagem1.setAttribute('src', 'img/alagoas.png');
+        document.getElementById('bandeiraEstado').appendChild(imagem1);
+    }
     else {
         resultado.innerHTML += `<p><strong>SEU ESTADO AINDA NÃO ESTÁ NO BANCO DE DADOS.</strong></p>`
         imagem1.setAttribute('src', 'img/Brasil.png');
