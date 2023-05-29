@@ -1,12 +1,23 @@
+var textInput = window.document.getElementById('textInput')
+
+
+textInput.addEventListener('keyup', function(evento){
+    if (evento.target.value.length < 2) return;
+    
+    if (evento.code === 'Enter') {
+        calcular()
+    }
+})
+
 function calcular() {
-    var textInput = window.document.getElementById('textInput')
     var resultado = window.document.getElementById('res')
     var estado = String(textInput.value)
             
     var imagem1 = document.createElement('IMG');
 
-            
-    if(estado == 'RO' || estado == 'ro' || estado == 'Rondônia' || estado == 'RONDÔNIA' || estado == 'RONDONIA' || estado == 'rondonia') {
+
+    // if (['rondonia', 'rondônia', 'ro'].includes(estado.toLowerCase()))
+    if(estado.toLowerCase() == 'ro' || estado == 'Rondônia' || estado == 'RONDÔNIA' || estado == 'RONDONIA' || estado == 'rondonia') {
         resultado.innerHTML = `<p><strong>O seu estado é Rondônia. Você é rondoniense.<strong</p>`
         resultado.innerHTML += `<p><strong>Nº de cidades: 52</br> População: 1.796.460</br> Capital: Porto Velho</strong></br></p>`
         resultado.innerHTML += `<p><strong>O nome Rondônia é uma homenagem ao Marechal Cândido Rondon, que nasceu há 150 anos. De origem indígena por parte de seus bisavós maternos e bisavó paterna. Nasceu no dia 5 de Maio do ano de 1865, na cidade de Mimoso no estado do Mato Grosso, hoje Santo Antônio do Leverger.</strong</p>`
