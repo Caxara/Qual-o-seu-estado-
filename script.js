@@ -20,14 +20,14 @@ function calcular() {
         imagem1.setAttribute('src', 'img/para.jpg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
-    else if(estado == 'AC' || estado == 'ac'){
+    else if(estado == 'AC' || estado == 'ac'|| estado == 'Acre' || estado == 'acre' || estado == 'ACRE'){
         resultado.innerHTML = `<p><strong>O seu estado é o <strong>Acre</strong>. Você é acriano.</strong></p>`
         resultado.innerHTML = `<p><strong>Nº de cidade: 22</br> População: 790.101 hab.</br> Capital: Rio Branco</strong></p>`
         resultado.innerHTML = `<p><strong>O nome Acre surgiu de “Aquiri”, que significa “rio dos jacarés” na língua nativa dos índios Apurinãs, os habitantes originais da região banhada pelo rio que empresta o nome ao estado. Os exploradores da região transcreveram o nome do dialeto indígena, dando origem ao nome Acre.<strong></p>`
         imagem1.setAttribute('src', 'img/acre.jpg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
-    else if(estado == 'AP' || estado == 'ap'){
+    else if(estado == 'AP' || estado == 'ap' || estado == 'Amapá' || estado == 'amapá' || estado == 'AMAPÁ' || estado == 'AMAPA' || estado == 'amapa'){
         resultado.innerHTML = `<p><strong>O seu estado é <strong>Amapá</strong>. Você é amapaence.</strong></p>`
         resultado.innerHTML = `<p><strong>Nº de cidades: 27</br> População: 751.000 hab.</br> Capital: Macapá</strong></p>`
         resultado.innerHTML = `<p><strong>A palavra amapá é de origem indígena e vem da nação Nuaruaque, que habitava a região Norte do Brasil, 
@@ -35,7 +35,7 @@ function calcular() {
         imagem1.setAttribute('src', 'img/amapa.jpg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
-    else if(estado == 'AM' || estado == 'am'){
+    else if(estado == 'AM' || estado == 'am' || estado == 'Amazônas' || estado == 'AMAZÔNAS' || estado == 'AMAZONAS' || estado == 'amazonas' || estado == 'amazônas'){
         resultado.innerHTML = `<p><strong>O seu estado é o <strong>Amazônas</strong>. Você é amazonense.</strong></p>`
         resultado.innerHTML = `<p><strong>Nº de cidades: 62</br> População: 4.269.995 hab.</br> Capital: Manaus</strong></br></p>`
         resultado.innerHTML = `<p><strong>O Amazonas é o único estado brasileiro cujo nome vem do grego. Durante uma expedição no século 16, o espanhol Francisco de Orellana encasquetou em ter visto uma tribo de guerreiras índias mulheres que lutavam bravamente, igualzinho o mito das amazonas gregas. Logo, rio das Amazonas.</strong></p>`
@@ -99,14 +99,14 @@ function calcular() {
         imagem1.setAttribute('src', 'img/RioGrandeDoSul.jpeg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
-    else if(estado == 'MG' || estado == 'mg'){
+    else if(estado == 'MG' || estado == 'mg' || estado == 'Minas Gerais' || estado == 'minas gerais' || estado == 'MINAS GERAIS' || estado == 'minas Gerais'){
         resultado.innerHTML = `<p><strong>O seu estado é <strong>Minas Gerais</strong>. Você é mineiro(a).</strong></p>`
         resultado.innerHTML = `<p><strong>Nº de cidades: 471</br> População: 21.411.923 hab.</br> Capital: Belo Horizonte</strong></br></p>`
         resultado.innerHTML = `<p><strong>Minas Gerais se relaciona literalmente por abrigar campos de extração de inúmeros minérios, principalmente ouro, denominadas "minas gerais", em oposição às minas particulares ou por sua variedade de tipos de minério. No início do século XVIII, a região era simplesmente denominada Minas.</strong></p>`
         imagem1.setAttribute('src', 'img/MinasGerais.jpg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
-    else if(estado == 'GO' || estado == 'go'){
+    else if(estado == 'GO' || estado == 'go' || estado == ''){
         resultado.innerHTML = `<p><strong>O seu estado é Goiás. Você é goiano(a).</strong></p>`
         resultado.innerHTML = `<p><strong>Nº de cidade: 246</br> População: 6.523,000 hab.</br> Capital: Goiania</strong></p>`
         resultado.innerHTML = `<p><strong>O nome do Estado tem origem na denominação da tribo indígena “guaiás” que, por corruptela, se tornou Goiás. Vem do termo tupi “gwaya”, que quer dizer "indivíduo igual, gente semelhante, da mesma raça".</strong></p>`
