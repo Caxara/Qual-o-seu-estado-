@@ -49,6 +49,14 @@ function calcular() {
         imagem1.setAttribute('src', 'img/roraima.jpg');
         document.getElementById('bandeiraEstado').appendChild(imagem1);
     }
+    else if(estado == 'MA' || estado == 'ma' || estado == 'Maranhão' || estado == 'maranhão' || estado == 'MARANHÃO' || estado == 'Maranhao' || estado == 'maranhao' || estado == 'MARANHAO'){
+        resultado.innerHTML = `<p><strong>O seu estado é <strong>Maranhão</strong>. Você é maranhense.</strong></p>`
+        resultado.innerHTML = `<p><strong>Nº de cidades: 217</br> População: 7 153 262 hab.</br> Capital: São Luiz</strong></br></p>`
+        resultado.innerHTML = `<p><strong>Não há uma hipótese consensual para a origem do nome do estado do Maranhão.</br> As teorias mais aceitas são: referência à expressão em língua tupi "Mar'Anhan", que significa "O mar que corre".
+        Maranhão era o nome dado ao Rio Amazonas pelos nativos da região antes da chegada dos navegantes europeus (nos países Andinos é chamado de rio Maranhão.</strong></p>`
+        imagem1.setAttribute('src', 'img/maranhao.jpg');
+        document.getElementById('bandeiraEstado').appendChild(imagem1);
+    }
     else if(estado == 'TO' || estado == 'to' || estado == 'Tocantins' || estado == 'tocantins' || estado == 'TOCANTINS'){
         resultado.innerHTML = `<p>O seu estado é o <strong>Tocantins</strong>. Você é tocantinense.</p>`
         resultado.innerHTML = `<p>Nº de cidades: 139</br> População: 1,497.000 hab.</br> Capital: Palmas </p>`
