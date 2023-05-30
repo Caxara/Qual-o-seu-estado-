@@ -16,8 +16,7 @@ function calcular() {
     var imagem1 = document.createElement('IMG');
 
 
-    // if (['rondonia', 'rondônia', 'ro'].includes(estado.toLowerCase()))
-    if(estado.toLowerCase() == 'ro' || estado == 'Rondônia' || estado == 'RONDÔNIA' || estado == 'RONDONIA' || estado == 'rondonia') {
+    if (['ro','rondonia', 'rondônia',].includes(estado.toLowerCase())){
         resultado.innerHTML = `<p><strong>O seu estado é Rondônia. Você é rondoniense.<strong</p>`
         resultado.innerHTML += `<p><strong>Nº de cidades: 52</br> População: 1.796.460</br> Capital: Porto Velho</strong></br></p>`
         resultado.innerHTML += `<p><strong>O nome Rondônia é uma homenagem ao Marechal Cândido Rondon, que nasceu há 150 anos. De origem indígena por parte de seus bisavós maternos e bisavó paterna. Nasceu no dia 5 de Maio do ano de 1865, na cidade de Mimoso no estado do Mato Grosso, hoje Santo Antônio do Leverger.</strong</p>`
@@ -25,21 +24,22 @@ function calcular() {
         document.getElementById('bandeiraEstado').replaceChildren(imagem1);
                 
     }
-    else if(estado == 'PA' || estado == 'pa' || estado == 'Pará' || estado == 'pará' || estado == 'para' || estado == 'PARÁ' || estado == 'PARA'){
+    
+    else if (['pa', 'pará', 'para'].includes(estado.toLocaleLowerCase())){
         resultado.innerHTML = `<p><strong>O seu estado é o <strong>Pará</strong>. Você é paraense.</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidades: 144</br> População: 8.074.000 hab.</br> Capital: Belém</strong></p>`
         resultado.innerHTML += `<p><strong>A origem do nome Pará vem do termo “pa'ra”, o mesmo que “rio-mar” na língua tupi-guarani. Era assim que os índios denominavam um dos braços, o direito - do rio Amazonas.</strong></p>`
         imagem1.setAttribute('src', 'img/para.jpg');
         document.getElementById('bandeiraEstado').replaceChildren(imagem1);
     }
-    else if(estado == 'AC' || estado == 'ac'|| estado == 'Acre' || estado == 'acre' || estado == 'ACRE'){
+    else if(['ac', 'acre'].includes(estado.toLocaleLowerCase())){
         resultado.innerHTML = `<p><strong>O seu estado é o <strong>Acre</strong>. Você é acriano.</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidade: 22</br> População: 790.101 hab.</br> Capital: Rio Branco</strong></p>`
         resultado.innerHTML += `<p><strong>O nome Acre surgiu de “Aquiri”, que significa “rio dos jacarés” na língua nativa dos índios Apurinãs, os habitantes originais da região banhada pelo rio que empresta o nome ao estado. Os exploradores da região transcreveram o nome do dialeto indígena, dando origem ao nome Acre.<strong></p>`
         imagem1.setAttribute('src', 'img/acre.jpg');
         document.getElementById('bandeiraEstado').replaceChildren(imagem1);
     }
-    else if(estado == 'AP' || estado == 'ap' || estado == 'Amapá' || estado == 'amapá' || estado == 'AMAPÁ' || estado == 'AMAPA' || estado == 'amapa'){
+    else if(['ap', 'amapá', 'amapa'].includes(estado.toLocaleLowerCase())){
         resultado.innerHTML = `<p><strong>O seu estado é <strong>Amapá</strong>. Você é amapaence.</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidades: 27</br> População: 751.000 hab.</br> Capital: Macapá</strong></p>`
         resultado.innerHTML += `<p><strong>A palavra amapá é de origem indígena e vem da nação Nuaruaque, que habitava a região Norte do Brasil, 
@@ -47,21 +47,21 @@ function calcular() {
         imagem1.setAttribute('src', 'img/amapa.jpg');
         document.getElementById('bandeiraEstado').replaceChildren(imagem1);
     }
-    else if(estado == 'AM' || estado == 'am' || estado == 'Amazônas' || estado == 'AMAZÔNAS' || estado == 'AMAZONAS' || estado == 'amazonas' || estado == 'amazônas'){
+    else if(['am', 'amazônas', 'amazonas'].includes(estado.toLocaleLowerCase())){
         resultado.innerHTML = `<p><strong>O seu estado é o <strong>Amazônas</strong>. Você é amazonense.</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidades: 62</br> População: 4.269.995 hab.</br> Capital: Manaus</strong></br></p>`
         resultado.innerHTML += `<p><strong>O Amazonas é o único estado brasileiro cujo nome vem do grego. Durante uma expedição no século 16, o espanhol Francisco de Orellana encasquetou em ter visto uma tribo de guerreiras índias mulheres que lutavam bravamente, igualzinho o mito das amazonas gregas. Logo, rio das Amazonas.</strong></p>`
         imagem1.setAttribute('src', 'img/amazonas.jpg');
         document.getElementById('bandeiraEstado').replaceChildren(imagem1);
     }
-    else if(estado == 'RR' || estado == 'rr' || estado == 'Roraima' || estado == 'roraima' || estado == 'RORAIMA'){
+    else if(['roraima', 'rr'].includes(estado.toLocaleLowerCase())){
         resultado.innerHTML = `<p><strong>O seu estado é <strong>Roraima</strong>. Você é roraimense.</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidades: 15</br> População: 652.713 hab.</br> Capital: Boa Vista</strong></br></p>`
         resultado.innerHTML += `<p><strong>A palavra "Roraima" vem de línguas indígenas. Sua etimologia lhe emprega três significados: “Monte Verde”, “Mãe dos Ventos” e “Serra do Caju”. Seria a junção de roro (papagaio) e imã (pai, formador).</strong></p>`
         imagem1.setAttribute('src', 'img/roraima.jpg');
         document.getElementById('bandeiraEstado').replaceChildren(imagem1);
     }
-    else if(estado == 'MA' || estado == 'ma' || estado == 'Maranhão' || estado == 'maranhão' || estado == 'MARANHÃO' || estado == 'Maranhao' || estado == 'maranhao' || estado == 'MARANHAO'){
+    else if(['ma', 'maranhão','maranhao'].includes(estado.toLocaleLowerCase())){
         resultado.innerHTML = `<p><strong>O seu estado é <strong>Maranhão</strong>. Você é maranhense.</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidades: 217</br> População: 7 153 262 hab.</br> Capital: São Luiz</strong></br></p>`
         resultado.innerHTML += `<p><strong>Não há uma hipótese consensual para a origem do nome do estado do Maranhão.</br> As teorias mais aceitas são: referência à expressão em língua tupi "Mar'Anhan", que significa "O mar que corre".
@@ -69,14 +69,14 @@ function calcular() {
         imagem1.setAttribute('src', 'img/maranhao.jpg');
         document.getElementById('bandeiraEstado').replaceChildren(imagem1);
     }
-    else if(estado == 'TO' || estado == 'to' || estado == 'Tocantins' || estado == 'tocantins' || estado == 'TOCANTINS'){
+    else if(['to', 'tocantins'].includes(estado.toLocaleLowerCase())){
         resultado.innerHTML = `<p>O seu estado é o <strong>Tocantins</strong>. Você é tocantinense.</p>`
         resultado.innerHTML += `<p>Nº de cidades: 139</br> População: 1,497.000 hab.</br> Capital: Palmas </p>`
         resultado.innerHTML += `<p>O nome "Tocantins" é uma referência ao rio Tocantins, que corta o estado de sul ao norte. Trata-se de um termo oriundo do tupi antigo, onde significa "bicos de tucanos", através da junção dos termos tukana ("tucanos") e tim ("bicos")</p>`
         imagem1.setAttribute('src', 'img/tocantins.jpg');
         document.getElementById('bandeiraEstado').replaceChildren(imagem1);
     }
-    else if(estado == 'MT' || estado == 'mt' || estado == 'Mato Grosso' || estado == 'mato grosso' || estado == 'MATO GROSSO' || estado == 'Mato grosso' || estado == 'mato Grosso'){
+    else if(['mato grosso', 'mt'].includes(estado.toLocaleLowerCase())){
         resultado.innerHTML = `<p><strong>O seu estado é <strong>Mato Grosso</strong>. Você é matogrossense.</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidades: 144</br> População: 3,224.000 hab. </br> Capital: Cuiabá</strong></p>`
         resultado.innerHTML += `<p><strong>O nome Mato Grosso é originário de uma grande extensão de sete léguas de mato alto,</br> espesso, quase impenetrável, localizado nas margens do rio Galera, 
@@ -84,7 +84,7 @@ function calcular() {
         imagem1.setAttribute('src', '/img/matoGrosso.jpg');
         document.getElementById('bandeiraEstado').replaceChildren(imagem1);
     }
-    else if(estado == 'MS' || estado == 'ms' || estado == 'Mato Grosso do Sul' || estado == 'mato grosso do sul' || estado == 'MATO GROSSO DO SUL' ){
+    else if(){
         resultado.innerHTML = `<p><strong>O seu estado é <strong>Mato Grosso do Sul</strong>. Você é sul-matogrossense.</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidades: 79</br> População: 2,62.000 hab. </br> Capital: Campo Grande</strong></p>`
         resultado.innerHTML += `<p><strong>O termo "Mato Grosso do Sul" deriva do nome do vizinho "Mato Grosso", estado do qual aquele foi desmembrado quando de sua criação.</strong></p>`
