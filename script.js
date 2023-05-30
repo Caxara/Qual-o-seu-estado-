@@ -84,28 +84,28 @@ function calcular() {
         imagem1.setAttribute('src', '/img/matoGrosso.jpg');
         document.getElementById('bandeiraEstado').replaceChildren(imagem1);
     }
-    else if(){
+    else if(['mato grosso do sul', 'ms'].includes(estado.toLocaleLowerCase())){
         resultado.innerHTML = `<p><strong>O seu estado é <strong>Mato Grosso do Sul</strong>. Você é sul-matogrossense.</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidades: 79</br> População: 2,62.000 hab. </br> Capital: Campo Grande</strong></p>`
         resultado.innerHTML += `<p><strong>O termo "Mato Grosso do Sul" deriva do nome do vizinho "Mato Grosso", estado do qual aquele foi desmembrado quando de sua criação.</strong></p>`
         imagem1.setAttribute('src', '/img/Mato-Grosso-do-Sul.jpg');
         document.getElementById('bandeiraEstado').replaceChildren(imagem1);
     }
-    else if(estado == 'SP' || estado =='sp' || estado == 'São Paulo' || estado == 'são paulo' || estado == 'SÃO PAULO' || estado == 'sao paulo' || estado == 'SAO PAULO' || estado == 'Sao Paulo' || estado == 'Sao paulo'|| estado == 'São paulo'){
+    else if(['sp', 'são paulo','sao paulo'].includes(estado.toLocaleLowerCase())){
         resultado.innerHTML = `<p><strong>O seu estado é <strong>São Paulo</strong>. Você é paulista.</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidades: 645</br> População: 44.749.699 hab.</br> Capital: São Paulo</strong></br></p>`
         resultado.innerHTML += `<p><strong>O nome São Paulo foi escolhido porque o dia da fundação do colégio foi 25 de janeiro, mesmo dia no qual a Igreja Católica celebra a conversão do apóstolo Paulo de Tarso.</strong></p>`
         imagem1.setAttribute('src', 'img/SaoPaulo.jpeg');
         document.getElementById('bandeiraEstado').replaceChildren(imagem1);
     }
-    else if(estado == 'PR' || estado == 'pr' || estado == 'Paraná' || estado == 'paraná' || estado == 'Parana' || estado == 'parana' || estado == 'PARANÁ' || estado == 'PARANA'){
+    else if(['paraná', 'parana', 'pr'].includes(estado.toLocaleLowerCase())){
         resultado.innerHTML = `<p><strong>O seu estado é <strong>Paraná</strong>. Você é paranaense.</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidades: 399</br> População: 11.597.484 hab.</br> Capital: Curitiba</strong></br></p>`
         resultado.innerHTML += `<p><strong>O primitivo homem paranaense pertencia à família tupi-guarani e jê. Foram os tupi que deram nome ao Estado: Paraná "rio caudaloso", sendo estes ainda, os que primeiramente entraram em contato como o homem branco.</strong></p>`
         imagem1.setAttribute('src', 'img/Parana.jpeg');
         document.getElementById('bandeiraEstado').replaceChildren(imagem1);
     }
-    else if(estado == 'SC' || estado == 'sc' || estado == 'Santa Catarina' || estado == 'santa catarina' || estado == 'SANTA CATARINA' || estado == 'Santa catarina' || estado == 'santa Catarina'){
+    else if(['sc', 'santa catarina'].includes(estado.toLocaleLowerCase())){
         resultado.innerHTML = `<p><strong>O seu estado é <strong>Santa Catarina</strong>. Você é catarinense.</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidades: 295</br> População:7.252.502 hab.</br> Capital: Florianópolis</strong></br></p>`
         resultado.innerHTML += `<p><strong>Há divergências quanto ao responsável pela denominação de Santa Catarina: alguns autores atribuem a Sebastião Caboto, em homenagem à sua esposa, Catarina Medrano; outros defendem que tenha sido em homenagem a Santa Catarina de Alexandria, festejada pela igreja católica em 25 de novembro.</strong></p>`
