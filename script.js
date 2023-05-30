@@ -112,35 +112,35 @@ function calcular() {
         imagem1.setAttribute('src', 'img/SantaCatarina.jpeg');
         document.getElementById('bandeiraEstado').replaceChildren(imagem1);
     }
-    else if(estado == 'RS' || estado == 'rs' || estado == 'Rio Grande do Sul' || estado == 'rio grande do sul' || estado == 'RIO GRANDE DO SUL'){
+    else if(['rs','rio grande do sul'].includes(estado.toLocaleLowerCase())){
         resultado.innerHTML = `<p><strong>O seu estado é <strong>Rio Grande do Sul</strong>. Você é riograndense.</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidades: 497</br> População: 10.693.929 hab.</br> Capital: Porto Alegre</strong></br></p>`
         resultado.innerHTML += `<p><strong>O nome vem de um vilarejo que demarcava a área da foz do rio Grande, que não era foz, mas a lagoa dos Patos.</strong></p>`
         imagem1.setAttribute('src', 'img/RioGrandeDoSul.jpeg');
         document.getElementById('bandeiraEstado').replaceChildren(imagem1);
     }
-    else if(estado == 'MG' || estado == 'mg' || estado == 'Minas Gerais' || estado == 'minas gerais' || estado == 'MINAS GERAIS' || estado == 'minas Gerais'){
+    else if(['mg','minas gerais'].includes(estado.toLocaleLowerCase())){
         resultado.innerHTML = `<p><strong>O seu estado é <strong>Minas Gerais</strong>. Você é mineiro(a).</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidades: 471</br> População: 21.411.923 hab.</br> Capital: Belo Horizonte</strong></br></p>`
         resultado.innerHTML += `<p><strong>Minas Gerais se relaciona literalmente por abrigar campos de extração de inúmeros minérios, principalmente ouro, denominadas "minas gerais", em oposição às minas particulares ou por sua variedade de tipos de minério. No início do século XVIII, a região era simplesmente denominada Minas.</strong></p>`
         imagem1.setAttribute('src', 'img/MinasGerais.jpg');
         document.getElementById('bandeiraEstado').replaceChildren(imagem1);
     }
-    else if(estado == 'GO' || estado == 'go' || estado == 'Goiás' || estado == 'goiás' || estado == 'GOIÁS' || estado == 'Goias' || estado == 'goias' || estado == 'GOIAS'){
+    else if(['go','goiás', 'goias'].includes(estado.toLocaleLowerCase())){
         resultado.innerHTML = `<p><strong>O seu estado é Goiás. Você é goiano(a).</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidade: 246</br> População: 6.523,000 hab.</br> Capital: Goiania</strong></p>`
         resultado.innerHTML += `<p><strong>O nome do Estado tem origem na denominação da tribo indígena “guaiás” que, por corruptela, se tornou Goiás. Vem do termo tupi “gwaya”, que quer dizer "indivíduo igual, gente semelhante, da mesma raça".</strong></p>`
         imagem1.setAttribute('src', 'img/Goias.jpg');
         document.getElementById('bandeiraEstado').replaceChildren(imagem1);
     }
-    else if(estado == 'DF' || estado == 'df' || estado == 'Distrito Federal' || estado == 'distrito federal' || estado == 'DISTRITO FEDERAL' || estado == 'Distrito federal'){
+    else if(['df','distrito federal'].includes(estado.toLocaleLowerCase())){
         resultado.innerHTML = `<p><strong>O seu estado é o Distrito Federal. Você é candango(a).</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidade: 1</br> População: 2.570.160 hab.</br> Capital: Brasília</strong></p>`
         resultado.innerHTML += `<p><strong>O Distrito Federal recebe esse nome por abrigar a sede do governo brasileiro.</strong></p>`
         imagem1.setAttribute('src', 'img/Distrito.jpg');
         document.getElementById('bandeiraEstado').replaceChildren(imagem1);
     }
-    else if(estado == 'RJ' || estado == 'rj' || estado == 'Rio de Janeiro' || estado == 'rio de janeiro' || estado == 'RIO DE JANEIRO' || estado == 'Rio de janeiro'){
+    else if(['rj','rio de janeiro'].includes(estado.toLocaleLowerCase())){
         resultado.innerHTML = `<p><strong>O seu estado é Rio de Janeiro. Você é fluminense.</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidade: 92</br> População: 6.748.000 hab.</br> Capital: Rio de Janeiro</strong></p>`
         resultado.innerHTML += `<p><strong>As histórios são muitas, mas uma que foi adotada pela maioria é de que navegadores portugueses ao chegar na Baia de Guanabara, e por isso acharam estar diante de uma grande desenbocar de um rio.</strong></p>`
