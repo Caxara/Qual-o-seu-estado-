@@ -182,7 +182,7 @@ function calcular() {
         imagem1.setAttribute('src', 'img/Pernambuco.jpg');
         document.getElementById('bandeiraEstado').replaceChildren(imagem1);
     }
-    else if(estado == 'PB' || estado == 'pb' || estado == 'Paraíba' || estado == 'paraíba' || estado == 'PARAÍBA' || estado == 'Paraiba' || estado == 'paraiba' || estado == 'PARAIBA'){
+    else if(['pb' ,'paraíba','paraiba'].includes(estado.toLocaleLowerCase())){
         resultado.innerHTML = `<p><strong>O seu estado é Paraíba. Você é paraibano(a).</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidades: 223</br> População: 3.944.000 hab.</br> Capital: João Pessoa</strong></p>`
         resultado.innerHTML += `<p><strong>É controvertido o significado do topônimo dado ao rio Paraíba. Para Elias Erckman, Paraíba significa rio mau, porto ruim, ou mar corrompido. Varnhagen também indica a tradução de rio mau e Teodoro Sampaio, a de rio impraticável. Segundo Coriolano de Medeiros, porém, o significado exato seria braço de mar, pois os primeiros geógrafos que estudaram o rio tomaram-no por um braço de mar, sendo provável, assim, que o gentio da terra como tal o tivesse considerado, dando-lhe o nome com a precisão com que batizavam os acidentes do terreno.</strong></p>`
