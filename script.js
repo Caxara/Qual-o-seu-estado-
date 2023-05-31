@@ -147,21 +147,21 @@ function calcular() {
         imagem1.setAttribute('src', 'img/RioJaneiro.jpg');
         document.getElementById('bandeiraEstado').replaceChildren(imagem1);
     }
-    else if(estado == 'ES' || estado == 'es' || estado == 'Espírito Santo' || estado == 'espírito santo' || estado == 'ESPÍRITO SANTO' || estado == 'ESPIRITO SANTO' || estado == 'Espirito Santo' || estado == 'espirito santo'){
+    else if(['es','espirito santo'].includes(estado.toLocaleLowerCase())){
         resultado.innerHTML = `<p><strong>O seu estado é Espírito Santo. Você é capixaba.</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidades: 78</br> População: 3.885.000</br> Capital: Vitória</strong></p>`
         resultado.innerHTML += `<p><strong>Vasco Coutinho desembarcou na capitania em dia 23 de maio de 1535, desembarcando na atual Prainha de Vila Velha, onde fundou o primeiro povoamento. Como era oitava de Pentecostes, o donatário batizou a terra de Espírito Santo, em homenagem à terceira pessoa da Santíssima Trindade.</strong></p>`
         imagem1.setAttribute('src', 'img/EspiritoSanto.jpg');
         document.getElementById('bandeiraEstado').replaceChildren(imagem1);
     }
-    else if(estado == 'BA' || estado == 'ba' || estado == 'Bahia' || estado == 'bahia' || estado == 'BAHIA'){
+    else if(['ba', 'bahia'].includes(estado.toLocaleLowerCase())){
         resultado.innerHTML = `<p><strong>O seu estado é Bahia. Você é baiano(a).</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidades: 417</br> População: 15.013.00 hab.</br> Capital: Salvador</strong></p>`
         resultado.innerHTML += `<p><strong>O topônimo "Bahia" é uma referência à Baía de Todos os Santos, a qual deu o nome, originalmente, à Capitania da Baía de Todos os Santos. A capitania foi transformada, em 1821, em província. Em 1889, a Província da Bahia tornou-se o atual Estado da Bahia.</strong></p>`
         imagem1.setAttribute('src', 'img/Bahia.jpg');
         document.getElementById('bandeiraEstado').replaceChildren(imagem1);
     }
-    else if(estado == 'SE' || estado == 'se' || estado == 'Sergipe' || estado == 'sergipe' || estado == 'SERGIPE'){
+    else if(['se', 'sergipe'].includes(estado.toLocaleLowerCase())){
         resultado.innerHTML = `<p><strong>O seu estado é Sergipe. Você é sergipana(o).</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidades: 75</br> População: 2.022.000 hab. </br> Capital: Aracaju</strong></p>`
         resultado.innerHTML += `<p><strong>O nome Sergipe origina-se do tupi si´ri ü pe, que significa “rio dos siris”.</strong></p>`
