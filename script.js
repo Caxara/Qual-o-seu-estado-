@@ -168,14 +168,14 @@ function calcular() {
         imagem1.setAttribute('src', 'img/Sergipe.jpg');
         document.getElementById('bandeiraEstado').replaceChildren(imagem1);
     }
-    else if(estado == 'AL' || estado == 'al' || estado == 'Alagoas' || estado == 'alagoas' || estado == 'ALAGOAS'){
+    else if(['al','alagoas'].includes(estado.toLocaleLowerCase())){
         resultado.innerHTML = `<p><strong>O seu estado é Alagoas. Você é alagoana(o).</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidades: 102</br> População: 3.322.000 hab.</br> Capital: Maceió</strong></p>`
         resultado.innerHTML += `<p><strong>A palavra é de origem indígena, significando terra alagadiça (o que tapa o alagadiço), que deu origem ao riacho com o mesmo nome. Só na capital, Maceió, são 17 lagoas, entre mais de 30 em todo o estado. Essa característica da hidrografia definiu o nome do estado até hoje.</strong></p>`
         imagem1.setAttribute('src', 'img/alagoas.png');
         document.getElementById('bandeiraEstado').replaceChildren(imagem1);
     }
-    else if(estado == 'PE' || estado == 'pe' || estado == 'PERNAMBUCO' || estado == 'pernambuco' || estado == 'Pernambuco'){
+    else if(['pe','pernambuco'].includes(estado.toLocaleLowerCase())){
         resultado.innerHTML = `<p><strong>O seu estado é Pernambuco. Você é pernambucano(a).</strong></p>`
         resultado.innerHTML += `<p><strong>Nº de cidades: 185</br> População: 9.278.000 hab.</br> Capital: Recife</strong></p>`
         resultado.innerHTML += `<p><strong>A versão mais comum sobre Pernambuco diz que, por trás desse nome, está a mesma raiz em tupi (pa'ra) que Pará, Paraná e a Paraíba. No caso de Pernambuco, o termo na língua indígena seria paranãpuka, algo como “buraco no mar” ou “furo que o mar faz”.</strong></p>`
