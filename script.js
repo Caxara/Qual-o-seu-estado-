@@ -189,6 +189,18 @@ function calcular() {
         imagem1.setAttribute('src', 'img/Paraiba.jpg');
         document.getElementById('bandeiraEstado').replaceChildren(imagem1);
     }
+    else if(['pi', 'piauí', 'piaui'].includes(estado.toLocaleLowerCase())){
+        resultado.innerHTML = `<p><strong>O seu estado é Piauí. Você é piauiense.</strong></p>`
+        resultado.innerHTML += `<p><strong>Nº de cidades: 221</br> População: 3.289.290 hab. </br> Capital: Terezina</strong></p>`
+        resultado.innerHTML += `<p><strong>Inicialmente, as terras do Piauí receberam a denominação de Piagüí, nome dado pelos seus indígenas.
+        Mais tarde, chamaram-nas Piagoí.</br> Somente depois é que ficaram conhecidas por Piauí.
+        O topônimo "Piauí" vem da língua tupi, na qual significa "rio das piabas".</br>
+        Também existe a teoria que a palavra Piauí significa "terra dos piagas", ou seja, terra de pajés e povos indígenas.[</strong></p>`
+        imagem1.setAttribute('src', 'img/piaui.jpg');
+        document.getElementById('bandeiraEstado').replaceChildren(imagem1);
+    }
+
+
     else {
         resultado.innerHTML = `<p><strong>SEU ESTADO AINDA NÃO ESTÁ NO BANCO DE DADOS.</strong></p>`
         imagem1.setAttribute('src', 'img/Brasil.png');
