@@ -204,7 +204,7 @@ function calcular() {
         resultado.innerHTML = `<p><strong>...</strong></p>`
         resultado.innerHTML += `<p><strong>...</strong></p>`
         resultado.innerHTML += `<p><strong>...</strong></p>`
-        imagem1.setAttribute('src', '/img...');
+        imagem1.setAttribute('src', 'img/Ceara.jpg');
         document.getElementById('bandeiraEstado').replaceChildren(imagem1);
 
 
