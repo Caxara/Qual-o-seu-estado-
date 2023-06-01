@@ -199,7 +199,16 @@ function calcular() {
         imagem1.setAttribute('src', 'img/piaui.jpg');
         document.getElementById('bandeiraEstado').replaceChildren(imagem1);
     }
+    else if (['ce', 'ceará', 'ceara'].includes(estado.toLocaleLowerCase())){
 
+        resultado.innerHTML = `<p><strong>...</strong></p>`
+        resultado.innerHTML += `<p><strong>...</strong></p>`
+        resultado.innerHTML += `<p><strong>...</strong></p>`
+        imagem1.setAttribute('src', '/img...');
+        document.getElementById('bandeiraEstado').replaceChildren(imagem1);
+
+
+    }
 
     else {
         resultado.innerHTML = `<p><strong>SEU ESTADO AINDA NÃO ESTÁ NO BANCO DE DADOS.</strong></p>`
