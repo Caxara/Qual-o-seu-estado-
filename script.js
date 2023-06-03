@@ -200,14 +200,18 @@ function calcular() {
         document.getElementById('bandeiraEstado').replaceChildren(imagem1);
     }
     else if (['ce', 'ceará', 'ceara'].includes(estado.toLocaleLowerCase())){
-
         resultado.innerHTML = `<p><strong>...</strong></p>`
         resultado.innerHTML += `<p><strong>...</strong></p>`
-        resultado.innerHTML += `<p><strong>...</strong></p>`
+        resultado.innerHTML += `<p><strong>...</strong></p>` 
         imagem1.setAttribute('src', 'img/Ceara.jpg');
         document.getElementById('bandeiraEstado').replaceChildren(imagem1);
-
-
+    }
+    else if (['rio grande do norte','rn'].includes(estado.toLocaleLowerCase())){
+        resultado.innerHTML = `<p><strong></strong></p>`
+        resultado.innerHTML += `<p><strong></strong></p>`
+        resultado.innerHTML =+ `<p><strong></strong></p>`
+        imagem1.setAttribute('src', 'img/RioGrandeNorte.jpg');
+        document.getElementById('bandeiraEstado').replaceChildren(imagem1);
     }
 
     else {
