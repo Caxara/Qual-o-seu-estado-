@@ -200,16 +200,20 @@ function calcular() {
         document.getElementById('bandeiraEstado').replaceChildren(imagem1);
     }
     else if (['ce', 'ceará', 'ceara'].includes(estado.toLocaleLowerCase())){
-        resultado.innerHTML = `<p><strong>...</strong></p>`
-        resultado.innerHTML += `<p><strong>...</strong></p>`
-        resultado.innerHTML += `<p><strong>...</strong></p>` 
+        resultado.innerHTML = `<p><strong>O seu estado é o Ceará. Você é cearense.</strong></p>`
+        resultado.innerHTML += `<p><strong>Nº de cidade: 184 </br> População: 8.452.381 hab.</br> Capital: Fortaleza</strong></p>`
+        resultado.innerHTML += `<p><strong>Autores antigos atribuem historicamente ao topônimo ceará várias acepções, porém a mais 
+        conhecida e aceita diz significar "o cantar da jandaia". Segundo Manuel Ayres de Casal, 
+        ceará é nome composto de cemo — cantar forte, clamar — e ara — pequena arara — em língua tupi. 
+        Tal tese foi posteriormente confirmada e enriquecida pelo escritor José de Alencar.</strong></p>` 
         imagem1.setAttribute('src', 'img/Ceara.jpg');
         document.getElementById('bandeiraEstado').replaceChildren(imagem1);
     }
     else if (['rio grande do norte','rn'].includes(estado.toLocaleLowerCase())){
-        resultado.innerHTML = `<p><strong></strong></p>`
-        resultado.innerHTML += `<p><strong></strong></p>`
-        resultado.innerHTML =+ `<p><strong></strong></p>`
+        resultado.innerHTML = `<p><strong>O seu estado é o Rio Grande do Norte. Você é rio-grandense-do-norte.</strong></p>`
+        resultado.innerHTML += `<p><strong>Nº de cidades: 167 </br> População: 3 560 903 hab.</br> Capital: Natal</strong></p>`
+        resultado.innerHTML += `<p><strong>O primeiro Estado brasileiro a ser batizado como "Rio Grande" foi o Rio Grande do Norte,
+        que fica no Nordeste. O nome foi uma homenagem ao rio Potengi, que tem 176 quilômetros de extensão.</strong></p>`
         imagem1.setAttribute('src', 'img/RioGrandeNorte.jpg');
         document.getElementById('bandeiraEstado').replaceChildren(imagem1);
     }
