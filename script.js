@@ -204,7 +204,7 @@ function calcular() {
         resultado.innerHTML += `<p><strong>Nº de cidade: 184 </br> População: 8.452.381 hab.</br> Capital: Fortaleza</strong></p>`
         resultado.innerHTML += `<p><strong>Autores antigos atribuem historicamente ao topônimo ceará várias acepções, porém a mais 
         conhecida e aceita diz significar "o cantar da jandaia". Segundo Manuel Ayres de Casal, 
-        ceará é nome composto de cemo — cantar forte, clamar — e ara — pequena arara — em língua tupi. 
+        ceará é nome composto de cemo — cantar forte, clamar — e ara — pequena a rara — em língua tupi. 
         Tal tese foi posteriormente confirmada e enriquecida pelo escritor José de Alencar.</strong></p>` 
         imagem1.setAttribute('src', 'img/Ceara.jpg');
         document.getElementById('bandeiraEstado').replaceChildren(imagem1);
